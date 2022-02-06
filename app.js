@@ -32,7 +32,8 @@ function get_auth(request, response) {
     var name = request.body.user
     var password = request.body.password
     
-    response.json({"Tocken":"lashdfldnfknfojasodnFE SNFSAKFMFWAMD;Kqn","name":name})
+    response.json({ "access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkthcmwgQWRyaWFubyIsImlhdCI6MTUxNjIzOTAyMn0.STyNSCjMt9cKNL6YVfLRTBabPbzbW1FDRebDqTwC2-c",
+    "expires": "2022-02-22T23:59:59.999-08:00"})
 }
 
 
