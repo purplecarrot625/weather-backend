@@ -35,6 +35,10 @@ if (typeof bearerHeader != "undefined") {
 next();
 });
 
+const pathToSwaggerUi = “/home/ec2-user/swagger-ui/dist”
+app.use(express.static(pathToSwaggerUi))
+
+
 
 app.get('/data/2.5/weather', get_weather)
 app.get('/v1/weather', get_weather)
